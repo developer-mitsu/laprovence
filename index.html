@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <!-- slickの導入 -->
+  <link href="js/slick-theme.css" rel="stylesheet" type="text/css">
+  <link href="js/slick.css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="icon" href="img/それ以外/logo/provence.ico">
+
+  <title>La Provence</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header__top">
+      <div class="header__left">
+        <a href="index.html"><img src="img/それ以外/logo/プロヴァンサルロゴ２.jpg" alt="" width="200"></a>
+      </div>
+      <div class="header__right">
+        <p class="pc">
+          <a href="https://www.facebook.com/shinjukuprovencale/">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/provencale_2525/?hl=ja">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </p>
+        <p class="sp menu-b"><i class="fas fa-bars"></i></p>
+      </div>
+    </div>
+    <nav class="pc">
+      <ul>
+        <div class="line"></div>
+        <li><a href="./foodmenu.html">フードメニュー<span>FOODMENU</span></a></li>
+        <div class="line"></div>
+        <li><a href="./drinkmenu.html">ドリンクメニュー<span>DRINKMENU</span></a></li>
+        <div class="line"></div>
+        <li><a href="./index.html#access">アクセス<span>ACCESS</span></a></li>
+        <div class="line"></div>
+        <li><a href="./aboutStore.html">店舗について<span>ABOUT</span></a></li>
+        <div class="line"></div>
+        <li><a href="http://bisyoku8113.blog69.fc2.com/">ブログ<span>BLOG</span></a></li>
+        <div class="line"></div>
+      </ul>
+    </nav>
+    <nav class="sp menu">
+      <ul>
+        <li><a href="./foodmenu.html">フードメニュー<span>FOODMENU</span></a></li>
+        <li><a href="./drinkmenu.html">ドリンクメニュー<span>DRINKMENU</span></a></li>
+        <li><a href="./index.html#access">アクセス<span>ACCESS</span></a></li>
+        <li><a href="./aboutStore.html">店舗について<span>ABOUT</span></a></li>
+        <li><a href="http://bisyoku8113.blog69.fc2.com/">ブログ<span>BLOG</span></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="slider">
+    <div class="header__img">
+      <img src="img/料理１１/S__21315666.jpg" alt="">
+    </div>
+    <div class="header__img">
+      <img src="img/ドリンク/S__3817523.jpg" alt="">
+    </div>
+    <div class="header__img">
+      <img src="img/それ以外/店内風景/S__21315643.jpg" alt="">
+    </div>
+  </div>
+
+  <section class="concept__top">
+    <h1 class="contents__name">CONCEPT<br><span class="sub__menu">コンセプト</span></h1>
+    <div class="concept__contents">
+      <div class="concept__left">
+        <img src="img/それ以外/店内風景/S__21315642.jpg" alt="">
+      </div>
+      <div class="concept__right">
+        <h2>新宿の隠れ家で楽しいひと時を。</h2>
+        <p>13年前、日本で初の立ち飲みフレンチをオープン。<br>
+          雑誌やテレビ、海外からの撮影もありパイオニアとして知名度を上げてまいりました。<br>
+          料理は立ち飲みであってもクオリティは落とさず提供してきました。<br>
+          12年間プロヴァンサルに終止符をうち新たなプロヴァンサルに生まれ変わりました。<br>
+          スタンディングから着席スタイルにしてお料理やワインをゆっくり楽しんで頂きたいと思い昨年オープン致しました。<br>
+          お店の雰囲気もレトロなプロヴィンス地方をイメージして作りました。
+        </p>
+        <a href="aboutStore.html" class="about" style="bottom: -30px;">ReadMore...</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="food__container">
+    <section class="food">
+      <h1 class="contents__name">FOOD MENU<br><span class="sub__menu">フードメニュー</span></h1>
+      <div class="food__contents">
+        <div class="food__item">
+          <img src="img/料理２/S__21315632.jpg" alt="" , width="410" , height="300">
+          <p>長野県産ハシブトカラスのロースト</p>
+        </div>
+        <div class="food__item">
+          <img src="img/料理５/S__21315633.jpg" alt="" , width="410" , height="300">
+          <p>ヒグマのパテ</p>
+        </div>
+        <div class="food__item">
+          <img src="img/料理１６/S__21315649.jpg" alt="" , width="410" , height="300">
+          <p>魚介類の庭園仕立て</p>
+        </div>
+      </div>
+      <a href="foodmenu.html">ReadMore...</a>
+    </section>
+  </section>
+
+  <!--
+    FIXME: 
+    5枚目の画像がslick-centerが付与されるタイミングがずれているので修正が必要 
+  -->
+  <section class="drink">
+    <h1 class="contents__name">DRINK MENU<br><span class="sub__menu">ドリンクメニュー</span></h1>
+    <div class="drink__img">
+      <div class="drink__img__part">
+        <img src="img/ドリンク/S__3817519.jpg" alt="">
+      </div>
+      <div class="drink__img__part">
+        <img src="img/ドリンク/S__3817522.jpg" alt="">
+      </div>
+    </div>
+    <p>ワインを始めとする旬なドリンクを多数揃えております。お楽しみください</p>
+    <a href="drinkmenu.html">ReadMore...</a>
+  </section>
+
+  <section class="access" id="access">
+    <h1 class="contents__name">ACCESS<br><span class="sub__menu">アクセス</span></h1>
+    <div class="access__about">
+      <div class="access__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.187994693175!2d139.69826731517173!3d35.69699113019072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d2810a29a49%3A0x42a0c5deec1af4e5!2z44OX44Ot44O044Kh44Oz44K144Or!5e0!3m2!1sja!2sjp!4v1555319608990!5m2!1sja!2sjp"
+          width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="access__info">
+        <div class="access__info--part">
+          <strong>住所</strong>
+          <hr>
+          <small>
+            〒160-0021<br>
+            東京都新宿区歌舞伎町2-45-7 大木ビル1F<br>
+            Tel：03-3205-8113<br>
+            JR山手線「新宿駅」東口より徒歩5分<br>
+            西武新宿線「西武新宿駅」北口より　徒歩１５分
+          </small>
+        </div>
+        <div class="access__info--part">
+          <strong>営業時間</strong>
+          <hr>
+          <small>
+            月〜土　：　18:00~翌日1:30（L.O.）<br>
+            祝祭日　：　17:00~21:00（L.O.）<br>
+            日曜定休<br>
+            営業日の詳細はトップページの営業カレンダーで確認してください。
+          </small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+      <div class="footer__container">
+        <div class="footer__top">
+          <div class="footer__left">
+            <img src="img/logo.png" width="180" alt="">
+            <a href="https://www.facebook.com/shinjukuprovencale/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/provencale_2525/?hl=ja"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="footer__right">
+            <a href="#access">アクセス<i class="fas fa-chevron-right"></i></a>
+            <a href="#">お問い合わせ<i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+        <hr>
+        <nav>
+          <ul>
+            <li><a href="foodmenu.html">フードメニュー</a></li>
+            <li><a href="drinkmenu.html">ドリンクメニュー</a></li>
+            <li><a href="index.html#access">アクセス</a></li>
+            <li><a href="aboutStore.html">店舗について</a></li>
+            <li><a href="http://bisyoku8113.blog69.fc2.com/">ブログ</a></li>
+          </ul>
+        </nav>
+        <p class="copywrite">Copyright&copy;Provence, INC. All rights reserved.</p>
+      </div>
+    </footer>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script>
+    $('.slider').slick({
+      autoplay: true,
+      autoplaySpeed: 5000,
+      dots: true,
+      arrows: false
+    });
+
+    $('.drink__slider').slick({
+      centerMode: true,
+      centerPadding: '0',
+      slidesToShow: 3,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '20%',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+  </script>
+
+</body>
+
+</html>

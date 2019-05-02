@@ -1,0 +1,806 @@
+@charset "UTF-8";
+
+i {
+  font-size: 20px;
+}
+
+/*slick setting*/
+
+
+.slick-prev {
+  left: -35px;
+}
+
+.slick-prev:before {
+  content: url("../img/Arrow left icon.png");
+}
+
+.slick-next:before {
+  content: url("../img/Arrow right icon 4.png");
+}
+
+.slick-track {
+  width: 80%;
+}
+
+@font-face {
+  font-family: 'EB Garamond';
+  src: url("../font/EBGaramond12-Italic.ttf");
+}
+
+/*
+レスポンシブの大きさの指定
+*/
+/*
+複数回使用されるクラス
+*/
+.store_name {
+  font-family: 'Arial','Regular';
+  font-weight: normal;
+  color: #707070;
+}
+
+.flexbox1, header .header__top, header nav ul, .concept__top .concept__contents, .food__container .food .food__contents, .access .access__about, footer .footer__container .footer__top, footer .footer__container .footer__top .footer__left, footer .footer__container .footer__top .footer__right, .food__list, .food__menu, .drink__list .drink__menu .drink__block, .concept .concept__about, .staff .staff__about {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+  .flexbox1, header .header__top, header nav ul, .concept__top .concept__contents, .food__container .food .food__contents, .access .access__about, footer .footer__container .footer__top, footer .footer__container .footer__top .footer__left, footer .footer__container .footer__top .footer__right, .food__list, .food__menu, .drink__list .drink__menu .drink__block, .concept .concept__about, .staff .staff__about {
+    flex-direction: column;
+  }
+}
+
+.contents__name {
+  font-family: "EB Garamond", "SemiBold Italic";
+  font-style: italic;
+  text-align: center;
+  color: #A54B59;
+}
+
+.contents__name .sub__menu {
+  color: #707070;
+  font-size: 0.5em;
+  font-style: normal;
+}
+
+.top__subtext {
+  display: block;
+}
+
+.contents-width, section:not(.food__container):not(.top):not(.food), .footer__container, .food__container .food {
+  width: 78%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .contents-width, section:not(.food__container):not(.top):not(.food), .footer__container, .food__container .food {
+    width: 95%;
+    margin: auto;
+  }
+}
+
+.about, .concept__top .concept__contents .concept__right a, .food__container .food a, .drink a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: inline-block;
+  color: #A54B59;
+  font-size: 1.6rem;
+}
+
+.top {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  background-position: 53%;
+  background-size: cover;
+  background-image: url("../img/それ以外/店内風景/S__21315643.jpg");
+}
+
+.top .top__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.top .top__text .top__subtext {
+  font-family: "EB Garamond", "Regular";
+  font-weight: normal;
+  font-size: 0.8em;
+}
+
+section:not(.food__container):not(.top):not(.food), .footer__container {
+  padding: 4em 0;
+}
+
+@media screen and (max-width: 768px) {
+  section:not(.food__container):not(.top):not(.food), .footer__container {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section:not(.food__container):not(.top):not(.food), .footer__container {
+    width: 95%;
+    margin: auto;
+  }
+}
+
+.copywrite {
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+}
+
+.sp {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sp {
+    display: block;
+  }
+}
+
+/*
+本文のスタイル
+*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.3rem;
+  /* 16px*/
+  line-height: 2;
+  font-family: "ヒラギノ角ゴシック";
+  color: #707070;
+  margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+  /* IE8以下とAndroid4.3以下用フォールバック */
+  font-size: calc(2.4rem + ((1vw - 0.64rem) * 2.1429));
+  /* 24px~36pxで可変*/
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 24px;
+  /* IE8以下とAndroid4.3以下用フォールバック */
+  font-size: calc(2rem + ((1vw - 0.64rem) * 0.7143));
+  /* 20px~24pxで可変*/
+  line-height: 1.3;
+}
+
+@media (min-width: 1200px) {
+  /* 1200px以上*/
+  h1 {
+    font-size: 3.6rem;
+    /* 36px*/
+  }
+  h2 {
+    font-size: 2.4rem;
+    /* 24px*/
+  }
+}
+
+@media screen and (max-width: 640px) {
+  /* 640px以下*/
+  body {
+    line-height: 2;
+  }
+  h1 {
+    font-size: 2.4rem;
+    /* 24px*/
+  }
+  h2 {
+    font-size: 2rem;
+    /* 20px*/
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+header {
+  width: 80%;
+  margin: auto;
+}
+
+header .header__left {
+  width: 20%;
+}
+
+header .header__left img {
+  padding-top: 1em;
+  vertical-align: baseline;
+}
+
+header .header__right i:first-child {
+  margin-right: 10px;
+}
+
+header .header__top {
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  header .header__top {
+    position: relative;
+    z-index: 3;
+    background: #fff;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+}
+
+header nav ul li {
+  width: 25%;
+  text-align: center;
+  padding: 0 1em;
+}
+
+header nav ul li a {
+  display: block;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+header nav ul li a span {
+  display: block;
+  color: #A54B59;
+  font-size: 0.87em;
+}
+
+header nav ul li:last-child {
+  border-right: 1px solid gray;
+}
+
+header nav ul .line {
+  width: 1px;
+  height: 30px;
+  border-right: 1px solid #e1e1e1;
+  align-self: center;
+}
+
+header nav.sp {
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  display: block;
+  z-index: 4;
+  transform: translateY(-350px);
+  transition: 0.5s;
+}
+
+header nav.sp.active {
+  transform: translateY(0px);
+  transition: 0.5s ease-in;
+}
+
+header nav.sp ul {
+  text-align: center;
+}
+
+header nav.sp ul li {
+  width: 100%;
+  display: inline-block;
+}
+
+header nav.sp ul li li:last-child {
+  border: none;
+}
+
+.slider {
+  max-width: 100%;
+  height: 370px;
+}
+
+.slider .header__img img {
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+}
+
+.concept__top .concept__contents .concept__left {
+  width: 40%;
+  margin-right: 2em;
+}
+
+.concept__top .concept__contents .concept__left img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.concept__top .concept__contents .concept__right {
+  width: 60%;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .concept__top .concept__contents .concept__left, .concept__top .concept__contents .concept__right {
+    width: 100%;
+  }
+}
+
+.food__container {
+  background-color: #D5D5D5;
+  padding: 4em 0;
+}
+
+.food__container .food {
+  position: relative;
+  padding-bottom: 4em;
+}
+
+.food__container .food .food__contents .food__item {
+  width: 30%;
+  background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+  .food__container .food .food__contents .food__item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.food__container .food .food__contents .food__item img {
+  width: 100%;
+  object-fit: cover;
+  padding: 1em;
+  padding-bottom: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .food__container .food .food__contents .food__item img {
+    height: 250px;
+    object-fit: cover;
+  }
+}
+
+.food__container .food .food__contents .food__item p {
+  text-align: center;
+  margin-top: 0;
+}
+
+.drink {
+  position: relative;
+}
+
+.drink .drink__img {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .drink .drink__img {
+    flex-direction: column;
+  }
+}
+
+.drink .drink__img .drink__img__part {
+  width: 35%;
+  margin-right: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .drink .drink__img .drink__img__part {
+    width: 100%;
+  }
+}
+
+.drink .drink__img .drink__img__part img {
+  width: 100%;
+}
+
+.drink p {
+  text-align: center;
+}
+
+.access .access__about .access__map {
+  width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .access .access__about .access__map {
+    width: 100%;
+  }
+}
+
+.access .access__about .access__map iframe {
+  width: 100%;
+}
+
+.access .access__about .access__info {
+  width: 40%;
+  margin-left: 10%;
+}
+
+.access .access__about .access__info hr {
+  margin-top: 0;
+}
+
+.access .access__about .access__info--part:first-child {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .access .access__about .access__info {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+footer {
+  background: #2C2C2C;
+  color: #fff;
+  white-space: nowrap;
+}
+
+footer .footer__container .footer__top {
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  footer .footer__container .footer__top {
+    text-align: left;
+    flex-direction: column;
+  }
+}
+
+footer .footer__container .footer__top .footer__left {
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 768px) {
+  footer .footer__container .footer__top .footer__left {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+footer .footer__container .footer__top .footer__left a {
+  padding-left: 2em;
+}
+
+footer .footer__container .footer__top .footer__left a i {
+  color: gray;
+  vertical-align: bottom;
+}
+
+footer .footer__container .footer__top .footer__right {
+  padding-left: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  footer .footer__container .footer__top .footer__right {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0;
+  }
+}
+
+footer .footer__container .footer__top .footer__right a {
+  text-decoration: none;
+  padding-left: 2em;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  footer .footer__container .footer__top .footer__right a {
+    padding-left: 0;
+    padding-right: 2em;
+  }
+}
+
+footer .footer__container .footer__top .footer__right a i {
+  padding-left: 1em;
+}
+
+footer .footer__container .copywrite {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+footer a {
+  color: #fff;
+}
+
+/***************************
+  foodmenuのスタイルシートです
+****************************/
+.food__header {
+  background-image: url("../img/料理１１/S__21315666.jpg");
+}
+
+.food__list {
+  flex-wrap: wrap;
+}
+
+.food__list .food__part {
+  width: 32%;
+  margin-top: 2em;
+}
+
+@media screen and (max-width: 768px) {
+  .food__list .food__part {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3em;
+  }
+}
+
+.food__list .food__part img {
+  width: 100%;
+  height: 322px;
+  object-fit: cover;
+}
+
+.food__list .food__part p {
+  margin: 0;
+}
+
+.food__menu {
+  border-collapse: separate;
+  justify-content: space-between;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.food__menu .table__left, .food__menu .table__right {
+  width: 48%;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .food__menu .table__left, .food__menu .table__right {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 4em;
+  }
+}
+
+.food__menu .table__left tr td:first-child, .food__menu .table__left tr td:nth-child(2), .food__menu .table__right tr td:first-child, .food__menu .table__right tr td:nth-child(2) {
+  width: 40%;
+  text-align: left;
+}
+
+.food__menu .table__left tr td:nth-child(2), .food__menu .table__right tr td:nth-child(2) {
+  padding-right: 2em;
+}
+
+.food__menu .table__left tr td:last-child, .food__menu .table__right tr td:last-child {
+  width: 20%;
+  text-align: end;
+}
+
+/**********************
+ ドリンクメニューのスタイル
+**********************/
+.drink__header {
+  background-image: url("../img/ドリンク/S__3817523.jpg");
+}
+
+.drink__list .drink__menu {
+  padding: 4em 0;
+}
+
+@media screen and (max-width: 768px) {
+  .drink__list .drink__menu .drink__name {
+    text-align: center;
+  }
+}
+
+.drink__list .drink__menu .drink__block {
+  align-items: center;
+}
+
+.drink__list .drink__menu .drink__block .drink__img {
+  width: 45%;
+}
+
+@media screen and (max-width: 768px) {
+  .drink__list .drink__menu .drink__block .drink__img {
+    width: 80%;
+  }
+}
+
+.drink__list .drink__menu .drink__block .drink__img img {
+  width: 100%;
+}
+
+.drink__list .drink__menu .drink__block .drink__info {
+  width: 30%;
+  padding: 0 5%;
+  margin: auto;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .drink__list .drink__menu .drink__block .drink__info {
+    width: 80%;
+  }
+}
+
+.drink__list .drink__menu .drink__block .drink__info .drink__name__row {
+  vertical-align: top;
+  position: relative;
+  width: 80%;
+  width: 230px;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .drink__list .drink__menu .drink__block .drink__info .drink__name__row {
+    width: 230px;
+  }
+}
+
+@media screen and (max-width: 447px) {
+  .drink__list .drink__menu .drink__block .drink__info .drink__name__row {
+    width: 80vw;
+  }
+}
+
+.drink__list .drink__menu .drink__block .drink__info .drink__name__row::after {
+  display: block;
+  content: "";
+  width: 20%;
+  height: 1px;
+  background-color: gray;
+  position: absolute;
+  top: calc(25% - 1px);
+  right: 1em;
+}
+
+@media screen and (max-width: 768px) {
+  .drink__list .drink__menu .drink__block .drink__info .drink__name__row::after {
+    right: 2.5em;
+  }
+}
+
+@media screen and (max-width: 447px) {
+  .drink__list .drink__menu .drink__block .drink__info .drink__name__row::after {
+    width: 2%;
+    right: 1em;
+  }
+}
+
+.drink__list .drink__menu:nth-child(even) .drink__block {
+  flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 768px) {
+  .drink__list .drink__menu:nth-child(even) .drink__block {
+    flex-direction: column;
+  }
+}
+
+/*************
+aboutStrore
+*************/
+.concept .concept__about {
+  align-items: flex-end;
+}
+
+.concept .concept__about .concept__left {
+  width: 40%;
+  margin-right: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  .concept .concept__about .concept__left {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.concept .concept__about .concept__left img {
+  margin-bottom: 5em;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .concept .concept__about .concept__left img {
+    margin: 0;
+  }
+}
+
+.concept .concept__about .concept__right {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .concept .concept__about .concept__right {
+    width: 80%;
+    margin: auto;
+    padding-top: 3em;
+  }
+}
+
+.concept .concept__about .concept__right img {
+  margin-top: 7em;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .concept .concept__about .concept__right img {
+    margin: 0;
+  }
+}
+
+.staff .staff__about .staff__left {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .staff .staff__about .staff__left {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.staff .staff__about .staff__left img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.staff .staff__about .staff__right {
+  -moz-box-sizing: border-box;
+  width: 50%;
+  margin-left: 2%;
+}
+
+@media screen and (max-width: 768px) {
+  .staff .staff__about .staff__right {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.staff .staff__about .staff__right h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.slick-dots {
+  bottom: -40px;
+}
