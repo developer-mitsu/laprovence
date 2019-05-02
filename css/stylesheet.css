@@ -266,7 +266,6 @@ header .header__top {
 header nav ul li {
   width: 25%;
   text-align: center;
-  padding: 0 1em;
 }
 
 header nav ul li a {
@@ -616,7 +615,7 @@ footer a {
  ドリンクメニューのスタイル
 **********************/
 .drink__header {
-  background-image: url("../img/ドリンク/S__3817523.jpg");
+  background-image: url("../img/S__3817523.jpg");
 }
 
 .drink__list .drink__menu {
@@ -652,6 +651,7 @@ footer a {
   padding: 0 5%;
   margin: auto;
   white-space: nowrap;
+  text-align: end;
 }
 
 @media screen and (max-width: 768px) {
